@@ -1,0 +1,24 @@
+[rainbow]TODO[/rainbow]
+[ ] Create buttons representing the pieces in the ui.
+[ ] You can select a piece from the buttons.
+[ ] You can place down pieces. By selecting them with button then clicking in the 3D view.
+[ ] Costing money.
+[ ] You can drag pieces around.
+[ ] Drag a piece to the Ui to sell it.
+[ ] Tube that continually spawns Orange fruits.
+[ ] Able to drag the physics objects around.
+[ ] Squishing orange with a press piece. Results in juice and juiced flat orange
+[ ] conveyor belt.
+[ ] beating level criteria detector
+[ ] three stars. First for beating the level without dragging objects. Second for keeping under the budget. Third for saving a lotta of the budget.
+[ ] make a glass cup mesh and make it into a junk.
+[ ] implement juice into the game and have cup be able to collect it.
+
+- do the thing
+	- do this thing to complete the above
+	[x] this one is done
+	[ ] this one isn't
+[x] [rainbow]what the fish[/rainbow]
+[x] saves to [code]res://notes.txt[/code] by default
+
+[img]res://icon.svg[/img]

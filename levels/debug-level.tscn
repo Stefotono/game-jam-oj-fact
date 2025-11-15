@@ -1,11 +1,127 @@
-[gd_scene load_steps=4 format=3 uid="uid://dg1r2netwq8te"]
+[gd_scene load_steps=23 format=4 uid="uid://dg1r2netwq8te"]
 
 [ext_resource type="Script" uid="uid://blwlmhjn6doom" path="res://addons/untrue/level_root.gd" id="1_x2cc4"]
 [ext_resource type="Script" uid="uid://cik4fdsex7n34" path="res://addons/untrue/game_mode.gd" id="2_lqnlm"]
+[ext_resource type="Texture2D" uid="uid://ws58sk1ddf0q" path="res://assets/textures/debug/debug-tile-another-yeah-but-outy.png" id="3_8btqu"]
+[ext_resource type="Script" uid="uid://tbo0xynmpc72" path="res://addons/doodle_texture/doodle_texture.gd" id="4_gi574"]
+[ext_resource type="PackedScene" uid="uid://dp4887dwqthr3" path="res://junk/orange-fruit.tscn" id="5_1rcs7"]
 
 [sub_resource type="Resource" id="Resource_8btqu"]
 script = ExtResource("2_lqnlm")
 metadata/_custom_type_script = "uid://cik4fdsex7n34"
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_8btqu"]
+sky_top_color = Color(0.20625904, 0.4801528, 0.62981445, 1)
+sky_horizon_color = Color(0.996597, 1.0481482, 1.0666325, 1)
+ground_bottom_color = Color(0.5847476, 0.5170583, 0.44133434, 1)
+ground_horizon_color = Color(0.996597, 1.0481482, 1.0666325, 1)
+
+[sub_resource type="Sky" id="Sky_gi574"]
+sky_material = SubResource("ProceduralSkyMaterial_8btqu")
+
+[sub_resource type="Environment" id="Environment_1rcs7"]
+background_mode = 2
+sky = SubResource("Sky_gi574")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_gi574"]
+size = Vector2(20, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rcs7"]
+albedo_texture = ExtResource("3_8btqu")
+uv1_scale = Vector3(0.5, 0.5, 0.5)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_1rcs7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_yxhcb"]
+size = Vector3(5, 1, 1.5)
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_pnbmh"]
+_data = PackedByteArray("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")
+size_override = Vector2(256, 256)
+script = ExtResource("4_gi574")
+foreground_color = Color(0.72, 0.29520002, 0.29520002, 1)
+background_color = Color(1, 1, 1, 0)
+brush_size = 18
+metadata/_custom_type_script = "uid://tbo0xynmpc72"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1rcs7"]
+size = Vector3(5, 1, 1.5)
+
+[sub_resource type="GDScript" id="GDScript_gi574"]
+resource_name = "debug-interaction-handler"
+script/source = "extends Node
+
+@export var camera : Camera3D
+
+func _process(delta: float) -> void:
+	
+	# get the current mouse position
+	var mouse_pos : = get_viewport().get_mouse_position()
+	
+	# turn it into 3D location cordinates on the 2D grid
+	var grid_plane : = Plane(Vector3(0,0,1),Vector3.ZERO)
+	
+	var intersection_test = grid_plane.intersects_ray(
+		camera.project_ray_origin(mouse_pos),
+		camera.project_ray_normal(mouse_pos))
+	if intersection_test == null:
+		push_error(\"Intersection against grid failed uh oh.\")
+	
+	var intersection : Vector3 = intersection_test
+	intersection = intersection.snapped(Vector3.ONE) - Vector3(0.5,0.5,1.0)
+	
+	# render a square on location using Debug Draw 3D
+	DebugDraw3D.draw_box(intersection, Quaternion.IDENTITY, Vector3.ONE, Color.GREEN_YELLOW, true)
+"
+
+[sub_resource type="GDScript" id="GDScript_1rcs7"]
+resource_name = "ui-handler"
+script/source = "extends CanvasLayer
+
+var pieces_list : Dictionary[String,Dictionary] = {
+	\"platform\":{\"scene\":null,\"preview\":null,\"cost\":5}
+}
+
+## buttons get pressed
+
+## we maintain what is selected by button pressed signals.
+
+## we would instantiate the buttons at _ready
+## usin data from a dictionary.
+"
+
+[sub_resource type="LabelSettings" id="LabelSettings_yxhcb"]
+font_size = 56
+shadow_color = Color(0, 0, 0, 0.6784314)
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="LabelSettings" id="LabelSettings_pnbmh"]
+font_size = 36
+shadow_color = Color(0, 0, 0, 0.6627451)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="PortableCompressedTexture2D" id="PortableCompressedTexture2D_gi574"]
+_data = PackedByteArray("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")
+size_override = Vector2(256, 256)
+script = ExtResource("4_gi574")
+metadata/_custom_type_script = "uid://tbo0xynmpc72"
+
+[sub_resource type="LabelSettings" id="LabelSettings_pgjgc"]
+font_size = 51
+font_color = Color(0.82606, 0.82606006, 0.82606, 1)
+outline_size = 12
+outline_color = Color(0.5132329, 0.5132329, 0.5132329, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 0.4627451)
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ciy8r"]
+font_size = 31
+shadow_color = Color(0, 0, 0, 0.49803922)
+shadow_offset = Vector2(4, 4)
 
 [node name="DebugLevel" type="Node" node_paths=PackedStringArray("root_node")]
 script = ExtResource("1_x2cc4")
@@ -14,7 +130,168 @@ gamemode_replaceable = true
 root_node = NodePath(".")
 metadata/_custom_type_script = "uid://blwlmhjn6doom"
 
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Tes test"
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1rcs7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.551937, 0.51910615, -0.6526059, 0, 0.78260815, 0.62251467, 0.83388585, -0.34358886, 0.4319504, 0, 0, 0)
+shadow_enabled = true
+directional_shadow_mode = 0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.8480481, -0.15493338, 0.50676435, 0, 0.9563048, 0.2923717, -0.52991927, -0.24794526, 0.8109925, 5.6694183, 5.415567, 7.5507197)
+projection = 1
+size = 9.18
+
+[node name="Backdrop" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+mesh = SubResource("QuadMesh_gi574")
+surface_material_override/0 = SubResource("StandardMaterial3D_1rcs7")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 4.5, 0)
+mesh = SubResource("BoxMesh_1rcs7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 0)
+
+[node name="EndPlatform" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+mesh = SubResource("BoxMesh_yxhcb")
+skeleton = NodePath("../..")
+
+[node name="Decal" type="Decal" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.498, 0)
+size = Vector3(1.6, 0.037399292, 1.6)
+texture_albedo = SubResource("PortableCompressedTexture2D_pnbmh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25)
+shape = SubResource("BoxShape3D_1rcs7")
+
+[node name="Node" type="Node" parent="." node_paths=PackedStringArray("camera")]
+script = SubResource("GDScript_gi574")
+camera = NodePath("../Camera3D")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Node"]
+script = SubResource("GDScript_1rcs7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node/CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="HBoxContainer" parent="Node/CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.5
+alignment = 2
+
+[node name="Label" type="Label" parent="Node/CanvasLayer/HBoxContainer/Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "$800"
+label_settings = SubResource("LabelSettings_yxhcb")
+horizontal_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Node/CanvasLayer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label" type="Label" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "platform"
+label_settings = SubResource("LabelSettings_pnbmh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = SubResource("PortableCompressedTexture2D_gi574")
+
+[node name="MarginContainer" type="MarginContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer/TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Label" type="Label" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer/TextureRect/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "$80"
+label_settings = SubResource("LabelSettings_pgjgc")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="HSeparator" type="HSeparator" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pieces"
+label_settings = SubResource("LabelSettings_ciy8r")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GridContainer" type="GridContainer" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 3
+
+[node name="Button" type="Button" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(106, 106)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Platform"
+
+[node name="Button2" type="Button" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Nothing"
+
+[node name="Button3" type="Button" parent="Node/CanvasLayer/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Nothing"
+
+[node name="RigidBody3D" parent="." instance=ExtResource("5_1rcs7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 2.504, 0)

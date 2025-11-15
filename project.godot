@@ -11,12 +11,21 @@ config_version=5
 [application]
 
 config/name="Game Jam OJ Fact"
+run/main_scene="uid://dnf1ioc8atyx1"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AutoScreenShotter="*res://addons/autoscreenshot/ingame_timer.tscn"
+
+[debug_draw_3d]
+
+settings/addon_root_folder="res://addons/debug_draw_3d"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/untrue/plugin.cfg")
+enabled=PackedStringArray("res://addons/autoscreenshot/plugin.cfg", "res://addons/doodle_texture/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg", "res://addons/icosphere/plugin.cfg", "res://addons/quick_notes_dock/plugin.cfg", "res://addons/untrue/plugin.cfg")
 
 [rendering]
 

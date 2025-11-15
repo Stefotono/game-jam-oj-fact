@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdscim6w4ofwx"
-path="res://.godot/imported/debug-tile-another-yeah-but-weirdy.png-19b87482d278244522651a8330b8fb16.ctex"
+uid="uid://bnn52eu0idnj4"
+path="res://.godot/imported/2025-11-15_23.16.41_Game Jam OJ Fact_debug-level_canvas.png-de29a2498e4671f8cabf9e62f7f33dfe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/textures/debug-tile-another-yeah-but-weirdy.png"
-dest_files=["res://.godot/imported/debug-tile-another-yeah-but-weirdy.png-19b87482d278244522651a8330b8fb16.ctex"]
+source_file="res://development-screencaps/2025-11-15_23.16.41_Game Jam OJ Fact_debug-level_canvas.png"
+dest_files=["res://.godot/imported/2025-11-15_23.16.41_Game Jam OJ Fact_debug-level_canvas.png-de29a2498e4671f8cabf9e62f7f33dfe.ctex"]
 
 [params]
 

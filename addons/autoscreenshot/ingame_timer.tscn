@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd0f1g46uv8v0"]
+
+[ext_resource type="Script" uid="uid://cfe65eikl1jia" path="res://addons/autoscreenshot/ingame_screenshotter.gd" id="1_l8oqq"]
+
+[node name="Autoscreenshot" type="Timer"]
+process_mode = 3
+wait_time = 180.0
+autostart = true
+script = ExtResource("1_l8oqq")
+target_directory = "C:/Users/stefo/OneDrive/Documents/GitHub/game-jam-oj-fact/development-screencaps"
+format_string = "{year}-{month}-{day}_{hour}.{minute}.{second}_Game Jam OJ Fact_na_ingame.png"
