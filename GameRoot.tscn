@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnf1ioc8atyx1"]
+
+[ext_resource type="Script" uid="uid://cms8ai6em0630" path="res://addons/untrue/game_root.gd" id="1_sk6ly"]
+
+[node name="GameRoot" type="Node"]
+script = ExtResource("1_sk6ly")
+default_level_path = "uid://dg1r2netwq8te"
+metadata/_custom_type_script = "uid://cms8ai6em0630"
