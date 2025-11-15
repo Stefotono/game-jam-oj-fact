@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlaq3f3hiu07f"
-path="res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex"
+uid="uid://bdscim6w4ofwx"
+path="res://.godot/imported/debug-tile-another-yeah-but-weirdy.png-19b87482d278244522651a8330b8fb16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/godotwaka.png"
-dest_files=["res://.godot/imported/godotwaka.png-ef0518417b4f997d237759e5551dd05d.ctex"]
+source_file="res://assets/textures/debug-tile-another-yeah-but-weirdy.png"
+dest_files=["res://.godot/imported/debug-tile-another-yeah-but-weirdy.png-19b87482d278244522651a8330b8fb16.ctex"]
 
 [params]
 
