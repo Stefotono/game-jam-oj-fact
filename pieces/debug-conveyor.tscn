@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhaqmc3i2r0l4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l8qst"]
+size = Vector3(2, 0.5, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_x78q5"]
+size = Vector3(1.5, 0.5, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rmgcq"]
+top_radius = 0.25
+bottom_radius = 0.25
+height = 1.0
+radial_segments = 16
+rings = 0
+
+[node name="DebugPlatform" type="StaticBody3D"]
+constant_linear_velocity = Vector3(15, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, 0)
+shape = SubResource("BoxShape3D_l8qst")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.25, 0)
+mesh = SubResource("BoxMesh_x78q5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -0.25, -0.25, 0)
+mesh = SubResource("CylinderMesh_rmgcq")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.25, -0.25, 0)
+mesh = SubResource("CylinderMesh_rmgcq")

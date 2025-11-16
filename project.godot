@@ -23,6 +23,10 @@ AutoScreenShotter="*res://addons/autoscreenshot/ingame_timer.tscn"
 
 settings/addon_root_folder="res://addons/debug_draw_3d"
 
+[display]
+
+window/size/always_on_top=true
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/autoscreenshot/plugin.cfg", "res://addons/doodle_texture/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg", "res://addons/icosphere/plugin.cfg", "res://addons/quick_notes_dock/plugin.cfg", "res://addons/untrue/plugin.cfg")

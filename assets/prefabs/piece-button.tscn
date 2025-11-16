@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://fq2l54vmwthg"]
+
+[ext_resource type="Texture2D" uid="uid://ws58sk1ddf0q" path="res://assets/textures/debug/debug-tile-another-yeah-but-outy.png" id="1_6haeo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_itgxt"]
+font_size = 28
+outline_size = 8
+outline_color = Color(0.3952002, 0.480128, 0.46055543, 1)
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_constants/icon_max_width = 85
+icon = ExtResource("1_6haeo")
+
+[node name="Cost" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "$5"
+label_settings = SubResource("LabelSettings_itgxt")
+horizontal_alignment = 2
+vertical_alignment = 2

@@ -1,8 +1,8 @@
 [rainbow]TODO[/rainbow]
-[ ] Create buttons representing the pieces in the ui.
-[ ] You can select a piece from the buttons.
-[ ] You can place down pieces. By selecting them with button then clicking in the 3D view.
-[ ] Costing money.
+[x] Create buttons representing the pieces in the ui.
+[x] You can select a piece from the buttons.
+[x] You can place down pieces. By selecting them with button then clicking in the 3D view.
+[x] Costing money.
 [ ] You can drag pieces around.
 [ ] Drag a piece to the Ui to sell it.
 [ ] Tube that continually spawns Orange fruits.
@@ -22,3 +22,5 @@
 [x] saves to [code]res://notes.txt[/code] by default
 
 [img]res://icon.svg[/img]
+
+We can make some levels where theres already some blocks there blocking you, so you gotta figure out how to do what you want with those blocking stuff
